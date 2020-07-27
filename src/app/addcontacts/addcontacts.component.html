@@ -1,0 +1,17 @@
+<section>
+    <div>
+        <span><strong>First Name</strong></span>
+        <input type="text" #name class="form-control" [value]="data.fname">
+    </div>
+    <div>
+        <span><strong>Last Name</strong></span>
+        <input type="text" #lname class="form-control" [value]="data.lname">
+    </div>
+    <div>
+        <span><strong>Number</strong></span>
+        <input type="text" #phoneno class="form-control" [value]="data.phoneno">
+    </div>
+    <div class="btn-end">
+        <button class="btn btn-primary" (click)="onAdd(name.value, lname.value,phoneno.value)">Add</button>
+    </div>
+</section>

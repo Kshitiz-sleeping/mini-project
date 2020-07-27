@@ -1,0 +1,111 @@
+section{
+    display:flex;
+    flex-direction: column;
+    background-color: gainsboro;
+    width: 90%;
+    justify-content: center;
+    padding: 2%;
+}
+
+h1{
+    margin: 0px;
+}
+
+.sectionInside{
+    display:flex;
+    flex-direction: column;
+    background-color: gainsboro;
+    justify-content: center;
+    width: 100%;
+    padding: 0%;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    margin: 2% 0% 2% 0%;
+    align-items: center;
+}
+
+.div1{
+    justify-content: flex-end;
+}
+
+p{
+    margin: 0px;
+    flex-grow: 1;
+}
+
+.p1{
+    display: flex;
+    align-items: center;
+}
+
+.p2{
+    display: flex;
+    justify-content: flex-end;
+}
+
+button{
+    display: block;
+}
+
+
+.p-row-start{
+    display: flex;
+}
+
+.p-row-end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+svg{
+    margin-right: 2%;
+}
+
+.p-column-start{
+    display: flex;
+    flex-direction: column;
+}
+
+.equal{
+    flex-grow: 1;
+}
+.p-column-end{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+span{
+    font-size: 100%;
+}
+
+.divContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.divContain{
+    display: flex;
+    justify-content: center;
+    margin: 2% 0% 2% 0%;
+}
+
+.divHead{
+    display: flex;
+    justify-content: center;
+    margin: 2% 0% 2% 0%;
+}
+
+.bg{
+    background-color: white;
+    margin: 0px;
+    padding: 1%;
+}
+
+input{
+    margin: 1% 0% 1% 0%;
+}

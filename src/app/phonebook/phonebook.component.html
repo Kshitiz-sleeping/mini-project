@@ -1,0 +1,42 @@
+<div class="divContainer">
+    <section>
+        <div>
+            <img src="../../assets//phonebook.png" alt="" height="100%" width="5%">
+            <h1>Phone Book App</h1>
+        </div>
+        <div class="divContain">
+            <p class="p1">
+                <span><h1>Contacts</h1></span>
+            </p>
+            <p class="p2">  
+                <button class="btn btn-primary"  (click)="openModal()">+Add Contact</button>
+            </p>
+        </div>
+        
+        <input  type="text" class="form-control" (input)="Search()" [(ngModel)]="searchByVal">
+
+        <div class="div1">
+            <select (change)="sortBy()" [(ngModel)]="sortBySomething">
+                <option value="">Sort By</option>
+                <option value="name">Sort by Name</option>
+                <option value="number">Sort by Number</option>
+            </select>
+        </div>
+
+        <section class="sectionInside">
+            <div class="bg" *ngFor="let contact of contacts">
+                <p class="p-column-start equal" >
+                   <span><b>{{contact.fname}} {{contact.lname}}</b></span>
+                   <span>{{contact.phoneno}}</span>
+                </p>
+                <p class="p-row-end equal">
+                    <svg (click)="edit(contact)" width="3.4%" height="3%" viewBox="0 0 16 16" class="bi bi-pencil" fill="currentColor" xmlns="http://www.w3.org/2000/svg%22%3E">
+                        <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"/>
+                        <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"/>
+                    </svg>
+                    <button class="btn btn-primary" (click)="deleteRecord(contact)">Delete</button>
+                </p>
+            </div>
+        </section>
+    </section>
+</div>

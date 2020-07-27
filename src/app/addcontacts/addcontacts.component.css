@@ -1,0 +1,32 @@
+section{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    /* padding: 2%; */
+    height: 100%;
+}
+
+div{
+    display: flex;
+    margin: 2% 0% 2% 0%;
+    align-items: center;
+    flex-grow: 1;
+}
+
+span{
+    width: 50%;
+}
+
+input{
+    width: 50%;
+}
+.btn-end{
+    display: flex;
+    margin: 2% 0% 2% 0%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+button{
+    align-items: flex-end;
+}
